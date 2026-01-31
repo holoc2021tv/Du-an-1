@@ -5,15 +5,17 @@
 			<meta charset="utf-8">
 			<title>Danh lam thắng cảnh Trà Vinh</title>
 			<style>
-			/*Quy định ảnh */
+		/*Quy định ảnh */
 			img
 	{
-		width:150px; 
-		height:150px;
-		border-radius:100%;
+		width:150px; /*chiều rộng*/
+		height:150px;/*chiều cao*/
+		border-radius:100%;/*bo tròn*/
 	}
 	    /*Quy định từng dòng trong ds số */
 	ol li
+	/*Chọn tất cả các thẻ <li> (mục danh sách) nằm trong thẻ <ol>*/
+	/*Hàm này giúp chữ bên trong không bị dính sát vào đường viền*/
 	{
 		padding: 10px;
 		border:5px solid red;
@@ -28,19 +30,22 @@
 	/*Quy định cho dường dlink*/
 	ol li a 
 	{
-		color:#00f;/*Chữ màu đỏ*/
+		color:#00f;/*Chữ màu xanh dương*/
 		text-decoration: none;/*Bỏ gạch chân*/
-		display:block;
+		display:block;/*tăng diện tích bấm của hàng*/
 	}
 			   
-			</style>
+		
+		    </style>
 		</head>
+
 
 		<body>
 			<h1>Một số danh lam thắng cảnh tiêu biểu ở Trà Vinh</h1>
 			<button onclick="alert('XIN CHÀO CÁC BẠN')">click me!</button>
 			<img src="danhlamthangcanh.jpg" alt="Danh lam thắng cảnh" width="200" height="200">
-			<ol type="1" start="1">
+			
+		 <ol type="1" start="1">/*thẻ li nằm trong ol giúp thay đổi dựa trên code trang trí*/
 			<li>
             <a href="https://mia.vn/cam-nang-du-lich/di-tich-lich-su-ao-ba-om-13336">Ao Bà Om (Ao Vuông)</a>
 			</li>
@@ -50,7 +55,7 @@
 			<li>
 			<a href="https://mia.vn/cam-nang-du-lich/bao-tang-van-hoa-dan-toc-khmer-tra-vinh-14463">Bảo tàng Văn hóa Dân tộc Khmer</a>
 			</li>
-			</ol>
+		 </ol>
 		</body>
 
 </html>
