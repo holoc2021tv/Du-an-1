@@ -3,7 +3,7 @@ html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: Tan; /* Đổi từ #f8f8f8 sang Tan */
+    background-color: #FFF8E7; /* Đổi sang nền Kem sáng */
     text-align: center;
 }
 
@@ -15,24 +15,31 @@ html, body {
 
 /* Ô A: Tiêu đề */
 .box-a {
-    background-color: #fff8e1; /* Màu vàng kem nhạt */
-    color: red;                /* Chữ màu đỏ */
+    background-color: #B71C1C;
+    color: #FFC107; 
     text-align: center;
     padding: 20px;
-    border-bottom: 5px solid #ffca28;
+    border-bottom: 5px solid #FFC107;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Bóng chữ nhẹ */
 }
+
 /* Phần giữa chứa B và C */
 .middle-section {
-    display: flex;
+    display: flex;/*Bật chế độ dàn trang*/
     flex: 1; /* Tự động giãn rộng phần giữa */
 }
 
 /* Ô B: Menu */
 .box-b {
     width: 200px; 
-    background-color:#d32f2f;
+    background-color: #D32F2F; /*Màu nền phần B*/
     padding: 15px;
-    border-right: none;
+    border-right: 2px solid #E57373; /* Thêm viền*/
+}
+
+.box-b h3 {
+    color: #FFECB3; /* Thêm màu vàng nhạt cho tiêu đề menu */
+    margin-top: 0;
 }
 
 .box-b ul {
@@ -46,37 +53,38 @@ html, body {
 
 .box-b a {
     text-decoration: none;
-    color: #fff176; /* Đổi chữ thành màu vàng sáng để nổi bật trên nền đỏ */
+    color: #FFF;
     font-weight: bold;
     display: block;
-    padding: 8px;
-    border: 1px solid #fff176; /* Bo viền màu vàng */
+    padding: 10px 8px;
+    border: 2px solid #FFC107; /* Viền vàng kim 2px */
     border-radius: 5px;
-    transition: 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+    transition: 0.3s; 
 }
 
 .box-b a:hover {
-    background-color: #fff176; /* Khi chuột đưa vào, nền nút biến thành vàng */
-    color: #d32f2f; /* Chữ biến thành đỏ */
+    background-color: #FFC107; 
+    color: #B71C1C; /* Màu chữ */
+    transform: scale(1.02); /* Phóng to nút nhẹ khi hover */
 }
 
 /* Ô C: Nội dung */
 .box-c {
-    flex: 1; /* Ô C chiếm toàn bộ phần còn lại */
-    background-color: Tan;
+    flex: 1; 
+    background-color: #FFF8E7;/*Màu nền*/
 }
 
 .box-c iframe {
     width: 100%;
     height: 100%;
-    border: none;/*xóa viền mặc định*/
+    border: none;
 }
 
 /* Ô D: Thông tin cá nhân */
 .box-d {
-    background-color: #333;
-    color: white;
-    padding: 0px; /* Tăng padding lên một chút để hộp rộng rãi hơn */
+    background-color: #881414; /*Màu nền*/
+    color: #FFECB3;            /* Màu chữ*/
+    padding: 10px;           /*độ rộng*/
     text-align: center;
-    font-size: 7px; /*Kích thước chữ*/
+    font-size: 10px;           /*phóng to chữ*/
 }
