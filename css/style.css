@@ -46,7 +46,7 @@ html, body {
 
 .box-b a {
     text-decoration: none;
-    color: #fff176; /* Đổi chữ thành màu vàng sáng để nổi bật trên nền đỏ */
+    color: #fff176; 
     font-weight: bold;
     display: block;
     padding: 8px;
