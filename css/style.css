@@ -1,0 +1,82 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full màn hình */
+}
+
+/* Ô A: Tiêu đề */
+.box-a {
+    background-color: #fff8e1; /* Màu vàng kem nhạt */
+    color: red;                /* Chữ màu đỏ */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #ffca28;
+}
+/* Phần giữa chứa B và C */
+.middle-section {
+    display: flex;
+    flex: 1; /* Tự động giãn rộng phần giữa */
+}
+
+/* Ô B: Menu */
+.box-b {
+    width: 200px; 
+    background-color:#d32f2f;
+    padding: 15px;
+    border-right: none;
+}
+
+.box-b ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box-b li {
+    margin-bottom: 10px;
+}
+
+.box-b a {
+    text-decoration: none;
+    color: #fff176; /* Đổi chữ thành màu vàng sáng để nổi bật trên nền đỏ */
+    font-weight: bold;
+    display: block;
+    padding: 8px;
+    border: 1px solid #fff176; /* Bo viền màu vàng */
+    border-radius: 5px;
+    transition: 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+.box-b a:hover {
+    background-color: #fff176; /* Khi chuột đưa vào, nền nút biến thành vàng */
+    color: #d32f2f; /* Chữ biến thành đỏ */
+}
+
+/* Ô C: Nội dung */
+.box-c {
+    flex: 1; /* Ô C chiếm toàn bộ phần còn lại */
+    background-color: Tan;
+}
+
+.box-c iframe {
+    width: 100%;
+    height: 100%;
+    border: none;/*xóa viền mặc định*/
+}
+
+/* Ô D: Thông tin cá nhân */
+.box-d {
+    background-color: #333;
+    color: white;
+    padding: 0px; /* Tăng padding lên một chút để hộp rộng rãi hơn */
+    text-align: center;
+    font-size: 7px; /*Kích thước chữ*/
+}

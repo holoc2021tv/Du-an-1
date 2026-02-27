@@ -1,61 +1,39 @@
 <!DOCTYPE html>
 <html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chào Xuân Bính Ngọ 2026</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
 
-		<head>
-			<meta charset="utf-8">
-			<title>Danh lam thắng cảnh Trà Vinh</title>
-			<style>
-		/*Quy định ảnh */
-			img
-	{
-		width:150px; /*chiều rộng*/
-		height:150px;/*chiều cao*/
-		border-radius:100%;/*bo tròn*/
-	}
-	    /*Quy định từng dòng trong ds số */
-	ol li
-	/*Chọn tất cả các thẻ <li> (mục danh sách) nằm trong thẻ <ol>*/
-	/*Hàm này giúp chữ bên trong không bị dính sát vào đường viền*/
-	{
-		padding: 10px;
-		border:5px solid red;
-	}
-	/*hiệu ứng di chuyển chuột*/
-	ol li:hover
-	{
-		background:pink;/*Màu nền*/
-		font-weight:bolder;/*In đậm chữ*/
-		text-decoration:underline;/*Gạch chân*/
-	}
-	/*Quy định cho dường dlink*/
-	ol li a 
-	{
-		color:#00f;/*Chữ màu xanh dương*/
-		text-decoration: none;/*Bỏ gạch chân*/
-		display:block;/*tăng diện tích bấm của hàng*/
-	}
-			   
-		
-		    </style>
-		</head>
+    <div class="container">
+        <header class="box-a">
+            <h1>TẾT NGUYÊN ĐÁN BÍNH NGỌ 2026</h1>
+        </header>
 
+        <div class="middle-section">
+            <nav class="box-b">
+                <h3>Danh mục</h3>
+                <ul>
+                    <li><a href="intro.html" target="content-frame">Giới thiệu Tết</a></li>
+                    <li><a href="hinhanhxuan.html" target="content-frame">Hình ảnh Xuân</a></li>
+                    <li><a href="videophaobong.html" target="content-frame">Video pháo hoa</a></li>
+                    <li><a href="phongtuc.html" target="content-frame">Phong tục tập quán</a></li>
+                </ul>
+            </nav>
 
-		<body>
-			<h1>Một số danh lam thắng cảnh tiêu biểu ở Trà Vinh</h1>
-			<button onclick="alert('XIN CHÀO CÁC BẠN')">click me!</button>
-			<img src="danhlamthangcanh.jpg" alt="Danh lam thắng cảnh" width="200" height="200">
-			
-		 <ol type="1" start="1">/*thẻ li nằm trong ol giúp thay đổi dựa trên code trang trí*/
-			<li>
-            <a href="https://mia.vn/cam-nang-du-lich/di-tich-lich-su-ao-ba-om-13336">Ao Bà Om (Ao Vuông)</a>
-			</li>
-			<li>
-			<a href="https://mia.vn/cam-nang-du-lich/chiem-nguong-chua-ang-tra-vinh-13798">Chùa Âng (Wat Angkor)</a>
-			</li>
-			<li>
-			<a href="https://mia.vn/cam-nang-du-lich/bao-tang-van-hoa-dan-toc-khmer-tra-vinh-14463">Bảo tàng Văn hóa Dân tộc Khmer</a>
-			</li>
-		 </ol>
-		</body>
+            <main class="box-c">
+                <iframe name="content-frame" src="intro.html" frameborder="0"></iframe>
+            </main>
+        </div>
 
+        <footer class="box-d">
+            <p><strong>Thông tin sinh viên:</strong></p>
+            <p>Họ tên: Hồ Thế Lộc | MSSV: 110124109</p>
+            <p>Email: holoc2021.tv@gmail.com | Lớp: DA24TTC</p>
+        </footer >
+    </div>
+
+</body>
 </html>
