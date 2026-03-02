@@ -1,90 +1,94 @@
-/* Thiết lập chung */
+/* Thiết lập chung toàn trang */
 html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFF8E7; /* Đổi sang nền Kem sáng */
+    background-color: #FFF8E7; /* Nền màu kem sáng */
     text-align: center;
 }
 
+/* Thùng chứa chính để dàn trang theo chiều dọc */
 .container {
     display: flex;
     flex-direction: column;
     height: 100vh; /* Full màn hình */
 }
 
-/* Ô A: Tiêu đề */
-.box-a {
-    background-color: #B71C1C;
-    color: #FFC107; 
-    text-align: center;
+/* --- Hộp A: BANNER TIÊU ĐỀ --- */
+.tieu-de-trang {
+    background-color: #B71C1C; /* Màu đỏ đậm */
+    color: #FFC107;           /* Chữ màu vàng kim */
     padding: 20px;
     border-bottom: 5px solid #FFC107;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Bóng chữ nhẹ */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
-/* Phần giữa chứa B và C */
+/* PHẦN QUAN TRỌNG: Chia đôi Menu và Iframe nằm ngang */
 .middle-section {
-    display: flex;/*Bật chế độ dàn trang*/
+    display: flex; 
     flex: 1; /* Tự động giãn rộng phần giữa */
 }
 
-/* Ô B: Menu */
-.box-b {
-    width: 200px; 
-    background-color: #D32F2F; /*Màu nền phần B*/
+/* --- Hộp B: THANH MENU ĐIỀU HƯỚNG --- */
+.thanh-menu {
+    width: 220px; 
+    background-color: #D32F2F; 
     padding: 15px;
-    border-right: 2px solid #E57373; /* Thêm viền*/
+    border-right: 2px solid #E57373;
+    text-align: center;
 }
 
-.box-b h3 {
-    color: #FFECB3; /* Thêm màu vàng nhạt cho tiêu đề menu */
+.thanh-menu h3 {
+    color: #FFECB3;
     margin-top: 0;
 }
 
-.box-b ul {
+.thanh-menu ul {
     list-style: none;
     padding: 0;
 }
 
-.box-b li {
-    margin-bottom: 10px;
+.thanh-menu li {
+    margin-bottom: 12px;
 }
 
-.box-b a {
+.thanh-menu a {
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
     display: block;
-    padding: 10px 8px;
-    border: 2px solid #FFC107; /* Viền vàng kim 2px */
-    border-radius: 5px;
-    transition: 0.3s; 
+    padding: 12px 8px;
+    border: 2px solid #FFC107;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-.box-b a:hover {
+.thanh-menu a:hover {
     background-color: #FFC107; 
-    color: #B71C1C; /* Màu chữ */
-    transform: scale(1.02); /* Phóng to nút nhẹ khi hover */
+    color: #B71C1C; 
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi rê chuột */
 }
 
-/* Ô C: Nội dung */
-.box-c {
-    flex: 1; 
-    background-color: #FFF8E7;/*Màu nền*/
+/* --- Hộp C: KHUNG HIỂN THỊ NỘI DUNG --- */
+.khung-noi-dung {
+    flex: 1; /* Chiếm toàn bộ phần còn lại bên phải */
+    background-color: #FFF8E7;
 }
 
-.box-c iframe {
+.khung-noi-dung iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
 
-/* Ô D: Thông tin cá nhân */
-.box-d {
-    background-color: #881414; /*Màu nền*/
-    color: #FFECB3;            /* Màu chữ*/
-    padding: 10px;           /*độ rộng*/
-    text-align: center;
-    font-size: 10px;           /*phóng to chữ*/
+/* --- Hộp D: CHÂN TRANG THÔNG TIN --- */
+.thong-tin-ca-nhan {
+    background-color: #881414; 
+    color: #FFECB3;            
+    padding: 10px; 
+    font-size: 14px;
+}
+
+.thong-tin-ca-nhan p {
+    margin: 5px 0;
 }
