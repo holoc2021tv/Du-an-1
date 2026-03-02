@@ -3,7 +3,7 @@ html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFF8E7; /* Nền màu kem sáng */
+    background-color: #FFF8E7;
     text-align: center;
 }
 
@@ -14,13 +14,12 @@ html, body {
     height: 100vh; /* Full màn hình */
 }
 
-/* --- Hộp A: BANNER TIÊU ĐỀ --- */
+/*Hộp A: BANNER TIÊU ĐỀ*/
 .tieu-de-trang {
-    background-color: #B71C1C; /* Màu đỏ đậm */
-    color: #FFC107;           /* Chữ màu vàng kim */
+    background-color: #B71C1C;
+    color: #FFC107;
     padding: 20px;
     border-bottom: 5px solid #FFC107;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 /* PHẦN QUAN TRỌNG: Chia đôi Menu và Iframe nằm ngang */
@@ -69,7 +68,7 @@ html, body {
     transform: scale(1.05); /* Hiệu ứng phóng to nhẹ khi rê chuột */
 }
 
-/* --- Hộp C: KHUNG HIỂN THỊ NỘI DUNG --- */
+/*Hộp C: KHUNG HIỂN THỊ NỘI DUNG*/
 .khung-noi-dung {
     flex: 1; /* Chiếm toàn bộ phần còn lại bên phải */
     background-color: #FFF8E7;
@@ -81,7 +80,7 @@ html, body {
     border: none;
 }
 
-/* --- Hộp D: CHÂN TRANG THÔNG TIN --- */
+/*Hộp D: CHÂN TRANG THÔNG TIN */
 .thong-tin-ca-nhan {
     background-color: #881414; 
     color: #FFECB3;            
